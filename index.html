@@ -3,109 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Site Monopage</title>
+  <title>Accueil - Mon Site</title>
   <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    
-    header {
-      background: #4CAF50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    nav {
-      background: #333;
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    
-    nav ul li {
-      margin: 0 15px;
-    }
-    
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: block;
-    }
-    
-    nav ul li a:hover {
-      background: #4CAF50;
-      border-radius: 5px;
-    }
-    
-    section {
-      padding: 60px 20px;
-    }
-    
-    section#accueil { background: #f4f4f4; }
-    section#apropos { background: #fff; }
-    section#portfolio { background: #f4f4f4; }
-    section#contact { background: #fff; }
-    
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-    }
-    
-    /* Responsive design */
-    @media (max-width: 600px) {
-      nav ul { flex-direction: column; }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #4CAF50; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #333; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+    nav ul li { margin: 0; }
+    nav ul li a { display: block; padding: 15px 20px; color: #fff; text-decoration: none; }
+    nav ul li a:hover { background: #4CAF50; }
+    .container { padding: 20px; }
+    footer { background: #333; color: #fff; text-align: center; padding: 10px 20px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur mon site</h1>
-    <p>Un site statique en monopage</p>
+    <h1>Bienvenue sur Mon Site</h1>
+    <p>Votre slogan ou description ici</p>
   </header>
-
+  
   <nav>
     <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
-  <section id="accueil">
-    <h2>Accueil</h2>
-    <p>Bienvenue sur mon site. Ici, vous trouverez une introduction et les dernières actualités.</p>
-  </section>
-
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p>Découvrez qui je suis et l'histoire derrière ce projet.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Voici quelques exemples de mes réalisations. Ajoutez des images et des descriptions pour mettre en valeur vos projets.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute demande, n'hésitez pas à me contacter par email ou via le formulaire de contact.</p>
-  </section>
-
+  
+  <div class="container">
+    <section>
+      <h2>Introduction</h2>
+      <p>Bienvenue sur mon site. Ici vous trouverez diverses informations sur mes projets, mon parcours et mes actualités.</p>
+    </section>
+    <section>
+      <h2>Nouveautés</h2>
+      <p>Ajoutez ici vos dernières actualités, projets récents ou articles de blog.</p>
+    </section>
+  </div>
+  
   <footer>
-    <p>&copy; 2025 Mon Site Monopage</p>
+    <p>&copy; 2025 Mon Site</p>
   </footer>
 </body>
 </html>
